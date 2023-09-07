@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #363636;
+    --dark: #000000;
+    --green: rgb(113, 244, 194);
+    --green1: #8CF2D5;
+    --puple: #9266F2;
+    --puple2: #985FF2;
+    --gray: rgb(95, 95, 95);
+    --smoke-white: #f9f9f9f9;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #ffffff;
+   
+    /* background: rgb(26, 24, 24); */
+    background: var(--black);
+}
+
+main {
+    width: 95%;
+    margin: 2rem auto;
+    /* height: 98vh; */   
+}
+
+.wrapper-container {
+    position: absolute;
+    max-width: 600px;
+    margin: 0 auto;
+    left: 350px;
+    right: 300px;
+    /* border: 2px solid red; */
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    padding: .45rem 4.1rem;
+    border-radius: 50px;
+    background: var(--green);
+    white-space: nowrap;
+}
+
+section {
+    /* border: 1.5px solid var(--gray); */
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    padding: .2rem  1rem 1.5rem 1rem;
+    background: var(--dark);
+}
+
+span.caption {
+    /* background: var(--green); */
+    border-right: 1.5px solid var(--gray);
+    border-bottom: 1.5px solid var(--gray);
+    border-left: 1.5px solid var(--gray);
+    padding: 5px 12px 4px 12px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: smaller;
+    background: var(--black);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+span.green-text {
+    color: var(--green);
+}
+
+p {
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    color: var(--smoke-white);
+}
+/* ======================================================================
+                                HEADER SECTION
+========================================================================= */
+
+.nav-icons {
+    height: 300px;
+    width: 40px;
+    background: var(--dark);
+    position: fixed;
+    top: 25vh;
+    right: 3%;
+    border: 1.5px solid var(--gray);
+    border-radius: 50px;
+    text-align: center;
+    /* padding: 0 1rem; */
+}
+
+.nav-icons a {
+    display: block;
+    margin-top: 1.1rem;
+    color: var(--smoke-white);
+}
+
+/* ======================================================================
+                                PROFILE SECTION
+========================================================================= */
+#profile-section {
+    background: var(--dark);
+    width: 300px;
+    /* height: 90%; */
+    height: 580px;
+    border: 1.5px solid var(--gray);
+    position: fixed;
+    top: 5vh;
+    left: 1rem;
+    /* padding-top: 1.2rem; */
+    padding: 4% 0;
+    text-align: center;
+    border-radius: 1rem;
+    /* box-shadow: 0px 1px 9px -3px rgba(0,0,0,.25) */
+}
+
+.profile-heading {
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    /* align-items: baseline; */
+    /* justify-content: baseline; */
+    gap: 2.5rem;
+    text-align: right;
+}
+
+.profile-heading .nickname {
+    font-size: 1.5rem;
+    margin-top: -4px;
+}
+
+.profile-pics img {
+    display: block;
+    width: 250px;
+    margin: 1.2rem auto;
+    border-radius: 50%;
+}
+
+.social-icons a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 1.2rem 0;
+    padding-top: .65rem;
+    width: 45px;
+    height: 45px;
+    border: 1px solid var(--gray);
+    color: var(--smoke-white);
+    border-radius: 50%;
+    font-size: 1.3rem;
+}
+
+/* ======================================================================
+                                HERO SECTION
+========================================================================= */
+#welcome-section {
+    /* height: 100vh; */
+    /* background-color: bisque; */
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: lighter;
+    word-spacing: 4px;
+}
+
+.experience {
+    display: flex;
+    text-align: center;
+    margin-top: 3rem;
+}
+/* ======================================================================
+                                ABOUT SECTION
+========================================================================= */
+/* ======================================================================
+                                RESUME SECTION
+========================================================================= */
+/* ======================================================================
+                                SERVICES SECTION
+========================================================================= */
+.sub-title {
+    border-left: 2px solid var(--green);
+    padding: .2rem 0 0 .85rem;
+    /* border-radius: 5px; */
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px -3px var(--green1); 
+}
+
+.sub-title h3 {
+    font-weight: lighter;
+    letter-spacing: 2px;
+    /* margin-bottom: 2px; */
+}
+
+.sub-title p {
+    margin-top: -12px;
+    font-size: .85rem;
+}
+/* ======================================================================
+                                MY SKILLS SECTION
+========================================================================= */
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    /* display: inline-block; */
+    text-align: center;
+    width: 100px;
+    height: auto;
+    /* border: 1px solid red; */
+    padding-top: 1rem;
+}
+
+.logos {
+    display: inline-block;
+    border: 1px solid var(--gray);
+    border-radius: 50px;
+    padding: 1rem 0;
+}
+
+.logos img {
+    width: 100px;
+    height: 80px;
+    
+    object-fit: contain;
+    
+}
+
+.logos span {
+    font-size: 1.5rem;
+    color: var(--green);
+}
+
+.skill span {
+    display: block;
+    padding-top: 1rem;
+}
+/* ======================================================================
+                                PROJECTS SECTION
+========================================================================= */
+/* ======================================================================
+                                TESTIMONIALS SECTION
+========================================================================= */
+/* ======================================================================
+                                PRICING SECTION
+========================================================================= */
+.prices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.price-tag {
+    border-left: 2px solid var(--green);
+    border-radius: 5px;
+    width: 270px;
+    padding: 1rem 0 1rem 1rem;
+    /* box-shadow: 0px 1px 9px -3px rgb(29, 255, 4);  */
+    box-shadow: 0px 1px 9px -3px var(--green1); 
+}
+
+.price-tag h3 {
+    font-weight: lighter;
+}
+.price-tag .green-text {
+    font-size: 2rem;
+}
+.price-tag .type {
+    display: inline-block;
+    text-align: left;
+}
+
+.price-tag .basic {
+    display: block;
+    text-align:  right;
+    width: 10rem;
+    margin-left: 5rem;
+    margin-top: -1.1rem;
+    font-size: .85rem;
+    /* border: solid red; */
+}
+.price-tag .btn {
+    padding: .45rem 3rem;
+    /* margin: 0 auto;
+    width: 200px; */
+}
+/* ======================================================================
+                                CONTACT SECTION
+========================================================================= */
