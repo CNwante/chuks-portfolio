@@ -13,13 +13,12 @@
     --smoke-white: #f9f9f9f9;
 }
 
-body {
+html, body {
     margin: 0;
     font-family: sans-serif;
     color: #ffffff;
-   
-    /* background: rgb(26, 24, 24); */
     background: var(--black);
+    scroll-behavior: smooth;
 }
 
 main {
@@ -44,6 +43,11 @@ main {
     border-radius: 50px;
     background: var(--green);
     white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
 section {
@@ -85,7 +89,7 @@ p {
 ========================================================================= */
 
 .nav-icons {
-    height: 300px;
+    height: auto;
     width: 40px;
     background: var(--dark);
     position: fixed;
@@ -94,7 +98,7 @@ p {
     border: 1.5px solid var(--gray);
     border-radius: 50px;
     text-align: center;
-    /* padding: 0 1rem; */
+    padding-bottom: 1em;
 }
 
 .nav-icons a {
@@ -338,7 +342,7 @@ p {
     flex-wrap: wrap;
 }
 
-.form-container p, .title {
+.form-container .title, .form-p {
     /* font-size: 3em; */
     text-align: center;
 }
