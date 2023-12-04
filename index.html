@@ -15,28 +15,31 @@
 <header>
     <nav id="navbar">
         <div class="nav-icons">
-            <a href="#">
+            <a href="#welcome-section">
                 <i class="fa-solid fa-house"></i>
             </a>
-            <a href="https://twitter.com/freecodecamp/">
+            <a href="#about">
                 <i class="fa-regular fa-user"></i> 
             </a>
-            <a href="https://instagram.com/freecodecamp">
+            <a href="#resume">
                 <i class="fa-solid fa-suitcase"></i>
             </a>
-            <a href="https://instagram.com/freecodecamp">
+            <a href="#services">
                 <i class="fa-brands fa-servicestack"></i>
             </a>
-            <a href="https://www.linkedin.com/school/free-code-camp/">
+            <a href="#skills">
+                <i class="fa-solid fa-cubes-stacked"></i>
+            </a>
+            <a href="#projects">
                 <i class="fa-solid fa-diagram-project"></i>
             </a>
-            <a href="https://www.linkedin.com/school/free-code-camp/">
-                <i class="fa-solid fa-money-check-dollar"></i>
-            </a>
-            <a href="https://www.linkedin.com/school/free-code-camp/">
+            <a href="#testimonials">
                 <i class="fa-solid fa-handshake"></i>
             </a>
-            <a href="https://www.linkedin.com/school/free-code-camp/">
+            <a href="#price-container">
+                <i class="fa-solid fa-money-check-dollar"></i>
+            </a>
+            <a href="#contact">
                 <i class="fa-solid fa-envelope"></i>
             </a>
         </div>
@@ -56,20 +59,20 @@
             <figcaption>Base in Abakaliki, Ebonyi State</figcaption>
         </picture>
         <div class="social-icons">
-            <a href="https://www.facebook.com/freecodecamp/">
+            <a href="https://web.facebook.com/nwante.solomon" target="_blank">
                 <i class="fab fa-facebook-f"></i>
             </a>
-                <a href="https://twitter.com/freecodecamp/">
+                <a href="https://twitter.com/CNwante" target="_blank">
             <i class="fab fa-twitter"></i>
             </a>
-                <a href="https://instagram.com/freecodecamp">
+                <a href="https://github.com/CNwante" target="_blank">
             <i class="fab fa-github"></i>
             </a>
-                <a href="https://www.linkedin.com/school/free-code-camp/">
+                <a href="https://www.linkedin.com/in/solomon-c-nwante-539986162/" target="_blank">
             <i class="fab fa-linkedin-in"></i>
             </a>
         </div>
-        <button class="btn">HIRE ME!</button>
+        <a class="btn" href="#contact">HIRE ME!</a>
     </div>
     <!-- ======================================================================
                                 HERO SECTION
@@ -97,7 +100,7 @@
         <!-- ======================================================================
                                     ABOUT SECTION
         =========================================================================-->
-        <section class="about-container">
+        <section class="about-container" id="about">
             <span class="caption"> <i class="fa-regular fa-user"></i> 
                 ABOUT
             </span>
@@ -115,7 +118,7 @@
         <!-- ======================================================================
                                     RESUME SECTION
         =========================================================================-->
-        <section class="resume-container">
+        <section class="resume-container" id="resume">
             <span class="caption"> <i class="fa-solid fa-suitcase"></i>
                 RESUME
             </span>
@@ -147,7 +150,7 @@
         <!-- ======================================================================
                                     SERVICES SECTION
         =========================================================================-->
-        <section class="services-container">
+        <section class="services-container" id="services">
             <span class="caption"> <i class="fa-brands fa-servicestack"></i>
                 SERVICES
             </span>
@@ -173,7 +176,7 @@
         <!-- ======================================================================
                                     MY SKILLS SECTION
         =========================================================================-->
-        <section>
+        <section id="skills">
             <span class="caption"> <i class="fa-solid fa-cubes-stacked"></i>
                 MY SKILLS
             </span>
@@ -239,7 +242,7 @@
         <!-- ======================================================================
                                     TESTIMONIALS SECTION
         =========================================================================-->
-        <section class="testi-container">
+        <section class="testi-container" id="testimonials">
             <span class="caption"> <i class="fa-solid fa-face-smile"></i>
                 TESTIMONIALS
             </span>
@@ -299,40 +302,52 @@
         <!-- ======================================================================
                                     CONTACT SECTION
         =========================================================================-->
-        <section class="contact-container">
+        <section class="contact-container" id="contact">
             <span class="caption"> <i class="fa-solid fa-envelope"></i>
                 CONTACT
             </span>
-            <h2 class="title">
-                Let's <span class="green-text">Work Together!</span>
-            </h2>
-    
-            <form action="" method="post" id="contact-form">
-                <label for="fName">
-                    <input type="text" id="fName" /> First Name
-                </label>
-                <label for="lName">
-                    <input type="text" id="lName" /> Last Name
-                </label>
-                <label for="phone">
-                    <input type="number" id="phone" /> Phone Number
-                </label>
-                <label for="email">
-                    <input type="email" id="email" /> Email Address
-                </label>
-                <label for="subject">
-                    <select name="" id="subject">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select>
-                </label>
-                <label for="message">
-                    <textarea type="text" id="message"></textarea>
-                </label>
-    
-                <button type="submit" class="btn">SEND MESSAGE</button>
-            </form>
+
+            <div class="form-container">
+                <div class="form-descrip">
+                    <h2 class="title">
+                        Let's <span class="green-text">Work Together!</span>
+                    </h2>
+
+                    <p class="form-p">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Tempora harum veniam earum doloremque, vero veritatis culpa!
+                        Nihil ab non eveniet quos sint! Perferendis quibusdam in
+                        quaerat qui ab. Expedita, laudantium.
+                    </p>
+                </div>
+        
+                <form action="" method="post" id="contact-form">
+                    <label for="fName">
+                        First Name <input type="text" id="fName" />
+                    </label>
+                    <label for="lName">
+                        Last Name <input type="text" id="lName" />
+                    </label>
+                    <label for="phone">
+                        Phone Number <input type="number" id="phone" />
+                    </label>
+                    <label for="email">
+                        Email Address <input type="email" id="email" />
+                    </label>
+                    <label for="subject">
+                        <select name="" id="subject">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </label>
+                    <label for="message">
+                        <textarea type="text" id="message"></textarea>
+                    </label>
+        
+                    <button type="submit" class="btn">SEND MESSAGE</button>
+                </form>
+            </div>
         </section>
     </div>
 </main>
