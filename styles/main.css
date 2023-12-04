@@ -332,3 +332,36 @@ p {
 /* ======================================================================
                                 CONTACT SECTION
 ========================================================================= */
+.form-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.form-container p, .title {
+    /* font-size: 3em; */
+    text-align: center;
+}
+
+#contact-form, .form-descrip{
+    width: 250px;
+}
+
+#contact-form input, select {
+    padding: .5em 0;
+    border-radius: 5px;
+    /* border-color: var(--green); */
+}
+
+#contact-form input,
+select, textarea {
+    width: 100%;
+    margin-bottom: 1em;
+    border: none;
+}
+
+#contact-form input:focus,
+select:focus, textarea:focus {
+    outline: none !important;
+    border: 3px solid var(--green);
+}
